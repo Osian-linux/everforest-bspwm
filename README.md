@@ -1,2 +1,3 @@
 # everforest-bspwm
-![image](https://github.com/user-attachments/assets/c4072f3b-7782-4fa0-89d1-72865c57cc97)
+![image_2025-04-25_19-19-13](https://github.com/user-attachments/assets/9c63df54-9242-40c2-bdae-457f790cd48d)
+
