@@ -7,7 +7,7 @@ sxhkd &
 picom &
 polybar &
 feh --bg-scale ~/Pictures/street.png &
-xrandr --output VGA-1 --primary --mode 1920x1080 --rotate normal --output eDP-1 --off
+#xrandr --output VGA-1 --primary --mode 1920x1080 --rotate normal --output eDP-1 --off
 bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
 
