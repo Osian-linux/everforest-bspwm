@@ -1,0 +1,55 @@
+### terminal
+super + q
+	alacritty
+
+### program runner
+super + r
+	rofi -show drun
+
+### screenshot
+Print
+	maim | xclip -selection clipboard -t image/png
+
+super + Print
+	sleep 3 && maim | xclip -selection clipboard -t image/png
+
+###### Change workspace or move window to workspace
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+### reload bspwm
+super + n
+	bspc wm -r
+
+### reload shortcuts config
+super + b
+	pkill -USR1 -x sxhkd
+
+### reload polybar
+super + p
+	pkill -USR1 -x polybar
+
+### exit with bspwm
+super + m
+	bspc quit
+
+### close window
+super + c
+	bspc node -{c}
+
+super + x
+	bspc node -t {floating, tiled}
+
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+######### VOLUME CONTROL #########
+#
+XF86AudioRaiseVolume
+	pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+XF86AudioLowerVolume
+	pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
